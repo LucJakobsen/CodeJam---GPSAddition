@@ -50,7 +50,6 @@ public class GPSManager : SingletonPattern<GPSManager>
     /// <summary>
     /// This method will update the location coordinates continously 
     /// </summary>
-    /// <returns></returns>
     IEnumerator UpdateLocation()
     {
         WaitForSeconds updateTime = new WaitForSeconds(updateWaitTime);
@@ -62,13 +61,14 @@ public class GPSManager : SingletonPattern<GPSManager>
             yield return updateTime;
         }
 
+        // will stop the location tracking and the coroutine
         void StopGPS()
         {
             Input.location.Stop();
             StopCoroutine(coroutine);
         }
 
-        /// stops the GPS when the application is closed
+        // stops the GPS when the application is closed
         void OnDisable()
         {
             StopGPS();

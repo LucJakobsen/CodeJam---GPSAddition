@@ -10,7 +10,7 @@ public class LightController : MonoBehaviour
     public bool isDone = false;
     public float threshold = 00.00010f;
 
-
+    // instantiates the different classes
     private void Start()
     {
         GPS = GPSManager.Instance;
@@ -18,6 +18,7 @@ public class LightController : MonoBehaviour
         BC = ButtonController.Instance;
     }
 
+    // ensures the location checker is run continously
     private void Update()
     {
         LocationChecker();
