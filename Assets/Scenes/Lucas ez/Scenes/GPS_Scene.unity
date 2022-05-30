@@ -1434,7 +1434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1730, y: -840}
+  m_AnchoredPosition: {x: -15526, y: -840}
   m_SizeDelta: {x: 1410.9252, y: 426.8713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449450866
@@ -1570,6 +1570,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel(fixed)
       objectReference: {fileID: 0}
+    - target: {fileID: 7200961610935023486, guid: 8e25bdf2b485e4eb4ac2956c36da16ec, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GPS_Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7200961610935023487, guid: 8e25bdf2b485e4eb4ac2956c36da16ec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c56b1d388424a4f518e18505e37407d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e25bdf2b485e4eb4ac2956c36da16ec, type: 3}
 --- !u!1 &1598213526
