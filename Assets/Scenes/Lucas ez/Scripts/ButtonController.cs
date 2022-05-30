@@ -9,12 +9,13 @@ public class ButtonController : SingletonPattern<ButtonController>
     public float savedLatitude;
     public float savedLongitude;
 
-    // Start is called before the first frame update
+    // unity event to make the button function properly
     void Start()
     {
         button.onClick.AddListener(OnButtonClick);
     }
 
+    // saves the last read coordinates as variables
     void OnButtonClick()
     {
         savedLatitude = Input.location.lastData.latitude;
